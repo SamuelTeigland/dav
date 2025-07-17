@@ -13,22 +13,22 @@ export default function Navbar() {
                     <img src="/images/mainLogo.png" alt="Delaware Audio Visual" className="navbar__image" />
                 </a>
                 <div className='navbar__link--container'>
-                    <Link to='/'>
+                    <Link to='/services'>
                         Services
                     </Link>
                     <Link target="_blank" to='https://catalog.delawareav.com/avcat/ctl8327/index.cfm'>
                         Products
                     </Link>
-                    <Link to='/'>
+                    <Link to='/about'>
                         About
                     </Link>
-                    <Link to="/">
+                    <Link to="/clients">
                         Clients
                     </Link>
-                    <Link to="/">
+                    <Link to="/projects">
                         Projects
                     </Link>
-                    <Link to='/'>
+                    <Link to='/contact'>
                         <button className='button__secondary navbar__button'>
                             Contact Us!
                         </button>
@@ -43,22 +43,22 @@ export default function Navbar() {
                 </div>
             </div>
             <div className={ isVisible === true ? 'hamburger__link--container shown__menu' : 'hamburger__link--container hidden__menu' }>
-                <Link to='/' onClick={ () => { setVisible(!isVisible); } }>
+                <Link to='/services' onClick={ () => { setVisible(!isVisible); } }>
                     Services
                 </Link>
                 <Link target="_blank" to='/https://catalog.delawareav.com/avcat/ctl8327/index.cfm' onClick={ () => { setVisible(!isVisible); } }>
                     Products
                 </Link>
-                <Link to='/' onClick={ () => { setVisible(!isVisible); } }>
+                <Link to='/about' onClick={ () => { setVisible(!isVisible); } }>
                     About
                 </Link>
-                <Link to="/" onClick={ () => { setVisible(!isVisible); } }>
+                <Link to="/clients" onClick={ () => { setVisible(!isVisible); } }>
                     Clients
                 </Link>
-                <Link to="/" onClick={ () => { setVisible(!isVisible); } }>
+                <Link to="/projects" onClick={ () => { setVisible(!isVisible); } }>
                     Projects
                 </Link>
-                <Link id='navbar__special--link' to='/' onClick={ () => { setVisible(!isVisible); } }>
+                <Link id='navbar__special--link' to='/contact' onClick={ () => { setVisible(!isVisible); } }>
                     Contact Us!
                 </Link>
 

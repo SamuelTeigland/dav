@@ -1,10 +1,11 @@
-import { Hero } from '../components/components'
+import { Hero, News } from '../components/components'
 
 function Home() {
 
   return (
     <div>
         <Hero />
+        <News />
     </div>
   )
 }

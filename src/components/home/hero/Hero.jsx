@@ -1,10 +1,11 @@
 import './hero.css'
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
     return (
         <div className="hero__container">
             <div className='hero__news--banner'>
-                <a href="/">See our latest news!</a>
+                <Link to="/news">See our latest news!</Link>
             </div>
             <div className='hero__subcontainer'>
                 <div className='hero__subcontainer--wrapper'>
@@ -13,12 +14,12 @@ export default function Hero() {
                         See what makes us the leading audio visual solutions provider to the Delaware Valley and beyond.
                     </p>
                     <div className='hero__button--container'>
-                        <a className='hero__link' href="/">
+                        <Link className='hero__link' to="/contact">
                             <button className="hero__button button__primary">Request a quote</button>
-                        </a>
-                        <a className='hero__link' href="/">
+                        </Link>
+                        <Link className='hero__link' target="_blank" to='https://catalog.delawareav.com/avcat/ctl8327/index.cfm'>
                             <button className="hero__button button__secondary">Our products</button>
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className='hero__subcontainer--wrapper'>

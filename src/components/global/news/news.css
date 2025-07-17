@@ -1,0 +1,119 @@
+.news__container {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    background: var(--darker-background);
+}
+
+.news__header {
+    text-align: left;
+    font-weight: 800;
+    font-size: 5rem;
+    color: var(--background);
+}
+
+.news__paragraph {
+    text-align: left;
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--background);
+    margin-top: 1rem;
+}
+
+.news__paragraph a {
+    color: var(--accent);
+    font-weight: 200;
+}
+
+.news__paragraph a:hover {
+    color: var(--secondary-accent);
+}
+
+.news__grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 3rem;
+}
+
+.blog__card {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog__card img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog__card--content {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: .25s;
+}
+
+.blog__card--content h3 {
+    padding-bottom: .5rem;
+    font-size: 1.25rem;
+    color: var(--background);
+    font-weight: 800;
+}
+
+.blog__card--content p {
+    font-size: 1rem;
+    color: var(--background);
+    font-weight: 200;
+}
+
+.blog__card:hover > .blog__card--content {
+    background: var(--text);
+    padding-left: 1rem;
+    border-left: .25rem solid var(--primary);
+}
+
+@media (max-width: 900px) {
+    .news__container {
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+
+    .news__header {
+        font-size: 4rem;
+    }
+
+    .news__paragraph {
+        font-size: 1.5rem;
+    }
+
+    .news__grid {
+        grid-template-columns: repeat(2, 40%);
+        justify-content: center;
+        align-items: start;
+        gap: 1rem;
+    }
+
+    .blog__card img {
+        height: 10rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .news__grid {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .news__header {
+        font-size: 3rem;
+    }
+
+    .news__paragraph {
+        font-size: 1.5rem;
+    }
+}
