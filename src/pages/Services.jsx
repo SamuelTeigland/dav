@@ -1,10 +1,10 @@
-import {  } from '../components/components'
+import { Construction } from '../components/components'
 
 function Services() {
 
   return (
     <div>
-        Services
+        <Construction />
     </div>
   )
 }

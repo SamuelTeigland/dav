@@ -1,10 +1,10 @@
-import {  } from '../components/components'
+import { Construction } from '../components/components'
 
 function Projects() {
 
   return (
     <div>
-        Projects
+        <Construction />
     </div>
   )
 }
