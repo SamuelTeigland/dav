@@ -1,5 +1,5 @@
 import './navbar.css'
-import { Hamburger } from '../../.././assets/assets';
+import { Hamburger, MainLogo } from '../../.././assets/assets';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -9,9 +9,9 @@ export default function Navbar() {
     return (
         <div className='navbar'>
             <div className='navbar__container'>
-                <a href='/' className='navbar__logo--container'>
-                    <img src="/images/mainLogo.png" alt="Delaware Audio Visual" className="navbar__image" />
-                </a>
+                <Link to='/' className='navbar__logo--container'>
+                    <MainLogo />
+                </Link>
                 <div className='navbar__link--container'>
                     <Link to='/services'>
                         Services

@@ -1,10 +1,10 @@
-import {  } from '../components/components'
+import { ContactForm } from '../components/components'
 
 function Contact() {
 
   return (
     <div>
-        Contact
+        <ContactForm />
     </div>
   )
 }

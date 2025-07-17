@@ -21,9 +21,8 @@
     padding: .5rem;
 }
 
-.navbar__image {
-    height: 6rem;
-    width: auto;
+.navbar__logo--container svg {
+    width: 14rem;
 }
 
 .navbar__link--container {
