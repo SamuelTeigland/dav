@@ -1,10 +1,11 @@
-import { Hero, News, ContactForm } from '../components/components'
+import { Hero, News, ContactForm, Trusted } from '../components/components'
 
 function Home() {
 
   return (
     <div>
         <Hero />
+        <Trusted />
         <News />
         <ContactForm />
     </div>

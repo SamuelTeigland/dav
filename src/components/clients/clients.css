@@ -1,0 +1,33 @@
+.clients__container {
+    background: var(--darker-background);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.clients__header {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 800;
+    color: var(--background);
+}
+
+.clients__grid {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 3rem;
+    width: 95%;
+    margin: auto;
+}
+
+.client__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client__card img {
+    background: white;
+    border-radius: .25rem;
+    width: 100%;
+}

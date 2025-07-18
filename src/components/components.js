@@ -7,3 +7,7 @@ export { default as ContactForm } from './global/contact/ContactForm'
 
 // Home
 export { default as Hero } from './home/hero/Hero'
+export { default as Trusted } from './home/trusted/Trusted'
+
+// Clients
+export { default as Clients } from './clients/Clients'

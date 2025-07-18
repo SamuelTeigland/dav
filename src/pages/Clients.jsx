@@ -1,10 +1,10 @@
-import { Construction } from '../components/components'
+import { Clients as ClientsComponent } from '../components/components'
 
 function Clients() {
 
   return (
     <div>
-        <Construction />
+        <ClientsComponent />
     </div>
   )
 }
